@@ -1,3 +1,4 @@
+const envData = require("./config");
 const crypto = require("crypto");
 
 // Secret key (32 bytes for AES-256)
@@ -29,3 +30,5 @@ const decrypted = decrypt(encrypted);
 
 console.log("Encrypted:", encrypted);
 console.log("Decrypted:", decrypted);
+
+console.log("module data", envData);
